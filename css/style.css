@@ -1,0 +1,778 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: #cccc;
+    overflow-x: hidden;
+}
+
+.nav {
+    background-color: #2e3192;
+    height: 55px;
+    display: flex;
+}
+
+.brandLogo {
+    width: 160px;
+    height: 36px;
+    margin: 5px auto auto 10px;
+}
+
+.nav-item {
+    display: flex;
+    margin-right: 10px;
+}
+
+.shopping,
+.sell,
+.help,
+.msg,
+.signIn {
+    position: relative;
+    margin: 10px 40px auto 5px;
+}
+
+.shopping3 {
+    position: absolute;
+    left: 0;
+}
+
+.shopping1::before,
+.sell::before,
+.help::before,
+.msg::before,
+.signIn::before {
+    color: #ffff;
+    font-size: 12px;
+    position: absolute;
+
+}
+
+.shopping2,
+.sell-2 {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+}
+
+.shopping1::before {
+    content: "Shopping";
+    top: 25px;
+    right: -15px;
+}
+
+.shopping:hover .shopping2 {
+    visibility: visible;
+}
+
+.sell::before {
+    content: "Sell";
+    top: 25px;
+}
+
+.sell:hover .sell-2 {
+    visibility: visible;
+}
+
+.help::before {
+    content: "Hellp";
+    top: 25px;
+    right: -5px;
+}
+
+.help2 {
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.help:hover .help2 {
+    visibility: visible;
+}
+
+.msg::before {
+    content: "Message";
+    top: 25px;
+    right: -12px;
+}
+
+.msg-2 {
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.msg:hover .msg-2 {
+    visibility: visible;
+}
+
+.signIn::before {
+    content: "SignIn";
+    top: 25px;
+    right: -10px;
+
+}
+
+.signIn2 {
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.signIn:hover .signIn2 {
+    visibility: visible;
+}
+
+.searchArea {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/image/bg-img.jpg);
+    height: 230px;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    padding: 45px;
+}
+
+.searchBox {
+    height: 50px;
+    width: 100%;
+    align-items: center;
+
+}
+
+.searchBox h3 {
+    text-align: center;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 24px;
+    color: #fff;
+}
+
+.search-Area {
+    padding: 10px 0 0 0;
+    position: relative;
+    width: 778px;
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+
+
+}
+
+.city {
+    background-color: #f6f4f4;
+    color: rgb(124, 122, 122);
+    outline: none;
+    border: none;
+    width: 182px;
+    height: 50px;
+    padding: 16px;
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+
+
+}
+
+.fa-chevron-down {
+    float: right;
+}
+
+.city span {
+    font-size: 16px;
+    margin-left: 16px;
+    display: inline-block;
+    font-size: 18px;
+
+}
+
+.fa-location-dot {
+    position: absolute;
+    left: 16px;
+    top: 18px;
+}
+
+.search {
+    height: 49px;
+    max-width: 472px;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 0 0 10px;
+    position: absolute;
+    font-size: 12px;
+
+
+}
+
+.searchIcon {
+    background-color: #097068;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    padding: 5px 22px;
+    position: relative;
+    top: -1px;
+    left: -10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    float: right;
+    cursor: pointer;
+}
+
+/* menu */
+.nav-Bar1 {
+    display: flex;
+    height: 55px;
+    border-bottom: 2px solid #f3f3f3;
+    padding: 0 auto;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+.buliding,
+.electrical,
+.drugs,
+.machinery,
+.industrial,
+.food,
+.view {
+    display: flex;
+    padding: 10px 5px 0;
+    width: 172px;
+    margin: auto;
+    text-decoration: none;
+    color: #000;
+
+
+}
+
+.nav-Img {
+    height: 32px;
+    margin-left: auto;
+}
+
+.nav-text {
+    text-align: left;
+    padding-left: 7px;
+    font-size: 12px;
+}
+
+.view {
+    display: inline-block;
+    margin-left: auto;
+}
+
+.one:hover {
+    background-color: #097068;
+}
+
+/* slider */
+
+
+.slide {
+    display: flex;
+    padding: 1px 75px 0 60px;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.slide2 {
+    display: flex;
+    padding: 10px 50px 10px 25px;
+    background-color: #fff;
+    align-items: center;
+
+}
+
+.connect h2 {
+    font-size: 37px;
+    font-weight: 200;
+    line-height: 40px;
+    color: #333;
+    padding: 0 3em 0 0;
+}
+
+.connect p {
+    padding: 1em 2em 0 0;
+    line-height: 20px;
+
+}
+
+.connectList {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding: 52px 0 0 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.silidImg1 {
+    object-position: center;
+    object-fit: cover;
+}
+
+
+/* Building Construction Material & Equipment */
+.container {
+    padding: 0 75px 0 60px;
+    margin: 20px 0;
+}
+
+.container-1 {
+    background-color: #fffefe;
+    border-top: 2px solid #2e3192;
+}
+
+.containerHeading {
+    padding: 15px 15px 5px 15px;
+}
+
+.h1 {
+    text-decoration: none;
+    color: #333;
+}
+
+.h1:hover {
+    text-decoration: underline;
+    color: #2e3192;
+}
+
+.container-2 {
+    display: flex;
+    width: 100%;
+}
+
+.container-3 {
+    width: 30%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(/buliding/download.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin: 10px 10px 12px 10px; */
+    position: relative;
+}
+
+.container9 {
+    position: absolute;
+    padding: 12px;
+    bottom: 12px;
+}
+
+.container9 ul {
+    list-style: none;
+}
+
+.container9 ul li {
+    padding: 3px;
+}
+
+.container9 ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container9 ul li a:hover {
+    text-decoration: underline;
+}
+
+.viewAll {
+    display: flex;
+    text-decoration: none;
+    padding: 10px 32px;
+    background-color: #14c9ba;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    margin: 12px 0 0 18px;
+    width: 65px;
+
+}
+
+.viewAll:hover {
+    text-decoration: underline;
+    background-color: #097068;
+}
+
+.container-8 {
+    display: flex;
+
+}
+
+.container-4 {
+    width: 100%;
+    padding: 0 12px 12px 0;
+}
+
+.container5 {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 12px 10px;
+    margin: 12px 0 0 12px;
+    width: 33%;
+}
+
+.container7 h3 {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 10px 10px;
+}
+
+.container7 p {
+    font-size: 14px;
+    color: #000;
+    margin: 0 0 10px 10px;
+}
+
+.container6 img {
+    width: 100px;
+}
+
+/* hover */
+
+/* .container7 p a,
+.container7 h3 a {
+    text-decoration: none;
+    color: #333;
+} */
+
+.container7 p a:hover,
+.container7 h3 a:hover {
+    text-decoration: underline;
+    color: #0a0f9c;
+}
+
+/* Electronics & Electrical Goods & Supplies */
+
+.electronic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(/eleatric/download.jpg);
+}
+
+/* Pharmaceutical Drug, Medicine, Medical Care & Consultation  */
+.drugcontain {
+    height: 50%;
+
+}
+
+.drugimg {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(/drug/download.jpg);
+}
+
+.drug1 {
+    margin: auto 0;
+}
+
+/* Hospital and Medical Equipment */
+.hospitalimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(/hospital/download.jpg);
+}
+
+/* Industrial Plants, Machinery & Equipment */
+
+.industrialimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(/Industrial/download.jpg);
+}
+
+/* Industrial & Engineering Products, Spares and Supplies */
+
+.industrialEngineering {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(/Engineering/download.jpg);
+}
+
+
+/* Food, Agriculture & Farming */
+.Agriculture {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(/food/download.png);
+}
+
+/* name Requirement */
+.col {
+    display: flex;
+    padding: 50px 0 18px 75px;
+}
+
+.col-1 {
+    width: 35%;
+}
+
+.col-1 h2 {
+    font-size: 37px;
+    font-weight: 200;
+    color: #333;
+}
+
+.col-1 ul {
+    padding-top: 50px;
+
+}
+
+.col-1 ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.col-1 ul li p {
+    padding: 10px 5px;
+    font-size: 14px;
+}
+
+.col-2 {
+    padding: 0 6%;
+    width: 50%;
+}
+
+.col-2 h4 {
+    font-size: 20px;
+}
+
+.product {
+    margin: 15px 0 0;
+    height: 34px;
+    width: 90%;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ccc;
+
+}
+
+.product::placeholder {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.col-3 {
+    margin: 15px 0;
+    display: flex;
+}
+
+.code {
+    height: 34px;
+    width: 52px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.number {
+    width: 60%;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.name {
+    margin: 15px 0 0;
+    height: 34px;
+    width: 40%;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.submit {
+    display: block;
+    padding: 10px 22px;
+    background-color: rgb(0, 166, 153);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    color: #fff;
+    margin: 20px auto 0 auto;
+}
+
+/* Apparel, Clothing & Garments */
+/* Packaging Material, Supplies & Machines */
+/* Find Suppliers from Top Cities */
+.city-1 {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.city-1 ul {
+    list-style: none;
+    text-align: center;
+
+}
+
+.city-1 ul li {
+    display: inline-block;
+    padding: 10px 15px;
+    width: 15%;
+    margin: 15px;
+}
+
+.city-img {
+    width: 72px;
+    height: 72px;
+    padding-bottom: 15px;
+}
+
+.cityContainer h3 {
+    color: #000;
+    font-size: 28px;
+    margin: 20px 10px 10px;
+}
+
+.city-img:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+/* Chemicals, Dyes, Solvents & Allied Products */
+
+/* Transportation & Logistics */
+/* CORONA COVID-19 Prevention & Care Supplies */
+/* Explore products from Premium Brands */
+
+.brand-img {
+    width: 200px;
+    height: 100px;
+    align-items: center;
+}
+
+.airtel {
+    width: 150px;
+}
+
+.airtels {
+    width: 75px;
+}
+
+.brand {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.h3 h3 {
+    color: #333;
+    font-size: 28px;
+    margin: 15px 12px;
+}
+
+/* Featured Categories */
+
+.categories{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 16px 16px;
+}
+.categories-1{
+    border: 1px solid #ccc;
+    width: 18%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+.categories-1 p{
+    margin: 15px 0 26px;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+.quotes{
+       background-color: #097068;   
+    padding: 8px 5px;
+    color: #fff;
+    border-radius: 30px;
+    margin: 5px auto;
+    width: 140px;
+    font-size: 16px;
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+/* social  area */
+.social {
+
+    padding: 10px 10px;
+    border-top: 1px solid #fff;
+
+}
+
+.social-1 {
+    margin: 0 15%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.social-3 {
+    display: flex;
+}
+
+
+/* foot area  */
+.footer {
+    margin: 0;
+    background-color: #eeeded;
+}
+
+.foot-container {
+    margin: 0 14%;
+
+}
+
+.non-border {
+    border: none;
+    padding: 1px 0 0 0;
+}
+
+.border {
+    background-color: #eee;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+td {
+    padding: 5px;
+}
+
+/* table a {
+    text-decoration: none;
+    color: #333;
+} */
+
+/* copyright */
+.copyright {
+    background-color: #eee;
+}
+
+.copyright-1 {
+    display: flex;
+    margin: 0 17%;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 5px;
+    color: #bbb;
+    background-color: #eee;
+}
+
+@media(max-width:900px) {
+    .footer-container {
+        color: red;
+    }
+
+    .container {
+        padding: 0 10px 0 10px;
+        margin: 20px 0;
+    }
+}
